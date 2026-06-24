@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Configuración Git - NBA</title>
+    <link rel="shortcut icon" alt="Favicon" href="../assets/img/logo.png" type="image/x-icon">
+    <meta name="author" content="Jacobo Paniagua">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-dark text-light">
+
+    <header>
+        <nav class="navbar navbar-expand-sm bg-black navbar-dark border-bottom border-warning border-3 sticky-top">
+            <div class="container-fluid">
+                <img src="../assets/img/nbalogo.png" alt="logo" style="width: 120px; height: 100px;">
+                <a class="navbar-brand fw-bold text-warning fs-4 letter-spacing-3" href="#">NBA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item fs-5 px-2">
+                            <a class="nav-link" href="../nba1.html"><i class="bi bi-house-door-fill"></i> Inicio</a>
+                        </li>
+                        <li class="nav-item fs-5 px-2">
+                            <a class="nav-link" href="#"><i class="bi bi-trophy-fill"></i> Campeonatos</a>
+                        </li>
+                        <li class="nav-item fs-5 px-2">
+                            <a class="nav-link" href="#"><i class="bi bi-person-fill"></i> Jugadores</a>
+                        </li>
+                        <li class="nav-item dropdown fs-5 px-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-calendar"></i> Proyectos
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark border-warning" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="table.html"><i class="bi bi-table me-2"></i>Tables</a></li>
+                                <li><a class="dropdown-item text-warning" href="git.html"><i class="bi bi-github me-2"></i>Git</a></li>
+                                <li><hr class="dropdown-divider bg-secondary"></li>
+                                <li><a class="dropdown-item" href="login.html"><i class="bi bi-box-arrow-in-right override"></i> Sign In / Login</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="btn btn-warning btn-sm fw-bold me-3 text-black"
+                style="--bs-btn-padding-y:.3rem;--bs-btn-padding-x:.9rem;">
+                <i class="bi bi-tv"></i> Ver NBA en vivo
+            </button>
+        </nav>
+    </header>
+
+    <main class="container my-5" style="max-width: 850px;">
+        
+        <div class="text-center mb-5">
+            <div class="text-warning mb-2">
+                <i class="bi bi-github" style="font-size: 3.5rem;"></i>
+            </div>
+            <h1 class="display-5 fw-bold text-light mb-2">Guía de Configuración Local y Remota</h1>
+            <p class="text-secondary fs-6">Sigue estos pasos secuenciales ejecutando los comandos en tu consola.</p>
+            <hr class="border-warning w-25 mx-auto border-2">
+        </div>
+
+        <div class="card bg-black border border-secondary rounded-3 p-4 mb-4 shadow-sm">
+            <h3 class="h5 fw-bold text-warning mb-2">
+                Paso 1: Verificar la instalación de Git
+            </h3>
+            <p class="text-secondary small mb-3">Comprueba que Git está instalado correctamente en tu equipo ejecutando el comando correspondiente en la terminal o CMD.</p>
+            <div class="p-3 bg-dark border border-secondary rounded-3 d-flex justify-content-between align-items-center">
+                <code class="text-light fw-semibold">git --version</code>
+                <i class="bi bi-terminal text-warning opacity-70"></i>
+            </div>
+        </div>
+
+        <div class="card bg-black border border-secondary rounded-3 p-4 mb-4 shadow-sm">
+            <h3 class="h5 fw-bold text-warning mb-2">
+                Paso 2: Configurar tu identidad
+            </h3>
+            <p class="text-secondary small mb-3">Establece tu nombre de usuario y correo electrónico global para que Git pueda identificar quién realiza los commits en el historial.</p>
+            <div class="p-3 bg-dark border border-secondary rounded-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <code class="text-light fw-semibold">git config --global user.name "TuNombre"</code>
+                    <i class="bi bi-person-fill text-warning opacity-70"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <code class="text-light fw-semibold">git config --global user.email "tu@email.com"</code>
+                </div>
+            </div>
+        </div>
+
+        <div class="card bg-black border border-secondary rounded-3 p-4 mb-4 shadow-sm">
+            <h3 class="h5 fw-bold text-warning mb-2">
+                Paso 3: Iniciar un proyecto local
+            </h3>
+            <p class="text-secondary small mb-3">Crea o abre una carpeta de proyecto y conviértela en un repositorio Git local mediante la consola para comenzar el control de versiones.</p>
+            <div class="p-3 bg-dark border border-secondary rounded-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <code class="text-light fw-semibold">cd mi-proyecto</code>
+                    <i class="bi bi-folder-fill text-warning opacity-70"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <code class="text-light fw-semibold">git init</code>
+                </div>
+            </div>
+        </div>
+
+        <div class="card bg-black border border-secondary rounded-3 p-4 mb-4 shadow-sm">
+            <h3 class="h5 fw-bold text-warning mb-2">
+                Paso 4: Agregar archivos y realizar el primer commit
+            </h3>
+            <p class="text-secondary small mb-3">Añade los archivos del proyecto al área de preparación (Staging Area) y guarda una primera versión estable con un mensaje descriptivo.</p>
+            <div class="p-3 bg-dark border border-secondary rounded-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <code class="text-light fw-semibold">git add .</code>
+                    <i class="bi bi-file-earmark-plus-fill text-warning opacity-70"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <code class="text-light fw-semibold">git commit -m "Mi primer commit"</code>
+                </div>
+            </div>
+        </div>
+
+        <div class="card bg-black border border-secondary rounded-3 p-4 mb-4 shadow-sm">
+            <h3 class="h5 fw-bold text-warning mb-2">
+                Paso 5: Crear un repositorio en GitHub
+            </h3>
+            <p class="text-secondary small mb-3">Accede a tu cuenta de GitHub desde el navegador y crea un nuevo repositorio vacío donde se almacenará el proyecto de forma remota.</p>
+            <div class="p-3 bg-dark border border-secondary rounded-3 mb-3 d-flex justify-content-between align-items-center">
+                <span class="text-light small">Accede a: <a href="https://github.com/new" target="_blank" class="text-warning text-decoration-none fw-semibold">github.com/new</a></span>
+                <i class="bi bi-globe text-warning opacity-70"></i>
+            </div>
+            <p class="text-secondary small mb-0"><i class="bi bi-arrow-right text-warning me-1"></i> Asigna el nombre a tu repositorio y presiona "Create repository".</p>
+        </div>
+
+        <div class="card bg-black border border-secondary rounded-3 p-4 mb-4 shadow-sm">
+            <h3 class="h5 fw-bold text-warning mb-2">
+                Paso 6: Conectar el proyecto local con GitHub
+            </h3>
+            <p class="text-secondary small mb-3">Vincula el repositorio local con la URL del repositorio remoto en GitHub y envía tus ramas principales para sincronizar ambos entornos.</p>
+            <div class="p-3 bg-dark border border-secondary rounded-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <code class="text-light fw-semibold">git remote add origin https://github.com/TuUsuario/repo.git</code>
+                    <i class="bi bi-cloud-arrow-up-fill text-warning opacity-70"></i>
+                </div>
+                <div class="mb-2"><code class="text-light fw-semibold">git branch -M main</code></div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <code class="text-light fw-semibold">git push -u origin main</code>
+                </div>
+            </div>
+        </div>
+
+        <div class="card bg-black border border-warning rounded-3 p-4 mb-4 shadow-sm border-start border-4">
+            <div class="d-flex align-items-start gap-3">
+                <span class="text-warning fs-4 d-inline-flex">
+                    <i class="bi bi-check-circle-fill"></i>
+                </span>
+                <div>
+                    <h3 class="h5 fw-bold text-light mb-1">Paso 7: Proyecto publicado</h3>
+                    <p class="text-secondary small mb-0">El repositorio queda correctamente conectado con GitHub, seguro en la nube y listo para seguir guardando cambios o colaborar en equipo.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-black text-light py-4 mt-5 border-top border-warning border-3">
+        <div class="container">
+            <ul class="nav justify-content-center border-bottom border-secondary pb-3 mb-3 fs-6">
+                <li class="nav-item">
+                    <a href="../nba1.html" class="nav-link px-3 text-secondary text-hover-warning"><i class="bi bi-house-door-fill"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-3 text-secondary"><i class="bi bi-trophy-fill"></i> Campeonatos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-3 text-secondary"><i class="bi bi-person-fill"></i> Jugadores</a>
+                </li>
+                <li class="nav-item">
+                    <a href="table.html" class="nav-link px-3 text-warning fw-semibold"><i class="bi bi-table"></i> Ver Tablas</a>
+                </li>
+            </ul>
+            <div class="text-center pt-2">
+                <p class="mb-1 text-light fw-medium">
+                    Desarrollado por: <span class="text-warning">Jacobo Paniagua</span>
+                </p>
+                <p class="text-secondary small mb-0">
+                    &copy; 2026 Taller 3 de Maquetación Web. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

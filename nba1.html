@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" alt="Favicon" href="assets/img/logo.png" type="image/x-icon">
+    <meta name="author" content="Jacobo Paniagua">
+    <meta name="description" content="Taller 2 de Maquetación web">
+    <meta name="keywords" content="TALLER, taller, Taller">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-traslucent">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-dark text-light">
+
+    <!-- NAV -->
+  <header>
+        <nav class="navbar navbar-expand-sm bg-black navbar-dark border-bottom border-warning border-3 sticky-top">
+            <div class="container-fluid">
+                <img src="assets/img/nbalogo.png" alt="logo" style="width: 120px; height: 100px;">
+                <a class="navbar-brand fw-bold text-warning fs-4 letter-spacing-3" href="#">NBA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item fs-5 px-2">
+                            <a class="nav-link" href="nba1.html"><i class="bi bi-house-door-fill"></i> Inicio</a>
+                        </li>
+                        <li class="nav-item fs-5 px-2">
+                            <a class="nav-link" href="#"><i class="bi bi-trophy-fill"></i> Campeonatos</a>
+                        </li>
+                        <li class="nav-item fs-5 px-2">
+                            <a class="nav-link" href="#"><i class="bi bi-person-fill"></i> Jugadores</a>
+                        </li>
+                        <li class="nav-item dropdown fs-5 px-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-calendar"></i> Proyectos
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark border-warning" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item text-warning" href="app/table.html"><i class="bi bi-table me-2"></i>Tables</a></li>
+                                <li><a class="dropdown-item" href="app/git.html"><i class="bi bi-github me-2"></i>Git</a></li>
+                                <li><hr class="dropdown-divider bg-secondary"></li>
+                                <li><a class="dropdown-item" href="app/login.html"><i class="bi bi-box-arrow-in-right override"></i> Sign In / Login</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="btn btn-warning btn-sm fw-bold me-3 text-black"
+                style="--bs-btn-padding-y:.3rem;--bs-btn-padding-x:.9rem;">
+                <i class="bi bi-tv"></i> Ver NBA en vivo
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- CAROUSEL -->
+        <div id="nbaCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#nbaCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#nbaCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#nbaCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/Jordan.avif" alt="Jordan" class="d-block w-100"
+                        style="height:550px;object-fit:cover;">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/Lebron.jpg" alt="Lebron" class="d-block w-100"
+                        style="height:550px;object-fit:cover;">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/Steph.webp" alt="Steph" class="d-block w-100"
+                        style="height: 550px;object-fit:cover;">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#nbaCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#nbaCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class="p-5 mb-0 bg-black text-light border-bottom border-warning border-3">
+            <div class="container-fluid py-4 text-center">
+                <p class="text-warning text-uppercase fw-semibold mb-1" style="letter-spacing:4px;font-size:.8rem;">
+                    National Basketball Association</p>
+                <h1 class="display-5 fw-bold text-warning mb-3">La mejor liga del mundo</h1>
+                <p class="col-md-7 fs-5 mx-auto mb-4">
+                    Fundada en 1946, la NBA reúne a los mejores jugadores del mundo en la liga más seguida del
+                    baloncesto. Pasión, talento y espectáculo en cada partido.
+                </p>
+                <a href="https://www.nba.com" target="_blank" class="btn btn-warning btn-lg fw-bold text-black me-2">
+                    Ver temporada 2024-25
+                </a>
+
+            </div>
+        </div>
+
+        <section class="bg-dark py-4 border-bottom border-secondary">
+            <div class="container my-4">
+                <h2 class="text-center text-warning mb-1">Equipos por Conferencia</h2>
+                <p class="text-center text-secondary mb-4">Los 30 equipos NBA distribuidos en Este y Oeste</p>
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+                        <h5 class="text-center mb-3">
+                            <span class="badge bg-warning text-black px-3 py-2 fs-6">CONFERENCIA ESTE</span>
+                        </h5>
+                        <div class="table-responsive">
+                            <table class="table table-dark table-striped table-bordered table-hover">
+                                <thead class="table-warning text-black">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Equipo</th>
+                                        <th>Ciudad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Boston Celtics</td>
+                                        <td>Boston, MA</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>New York Knicks</td>
+                                        <td>Nueva York, NY</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Philadelphia 76ers</td>
+                                        <td>Filadelfia, PA</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Chicago Bulls</td>
+                                        <td>Chicago, IL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Indiana Pacers</td>
+                                        <td>Indianapolis, IN</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Miami Heat</td>
+                                        <td>Miami, FL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Brooklyn Nets</td>
+                                        <td>Brooklyn, NY</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Charlotte Hornets</td>
+                                        <td>Charlotte, NC</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h5 class="text-center mb-3">
+                            <span class="badge bg-secondary text-white px-3 py-2 fs-6">CONFERENCIA OESTE</span>
+                        </h5>
+                        <div class="table-responsive">
+                            <table class="table table-dark table-striped table-bordered table-hover">
+                                <thead class="table-warning text-black">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Equipo</th>
+                                        <th>Ciudad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Los Angeles Lakers</td>
+                                        <td>Los Ángeles, CA</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Golden State Warriors</td>
+                                        <td>San Francisco, CA</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>San Antonio Spurs</td>
+                                        <td>San Antonio, TX</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Dallas Mavericks</td>
+                                        <td>Dallas, TX</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Los Angeles Clippers</td>
+                                        <td>Los Ángeles, CA</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Phoenix Suns</td>
+                                        <td>Phoenix, AZ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Oklahoma City Thunder</td>
+                                        <td>Oklahoma City, OK</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Denver Nuggets</td>
+                                        <td>Denver, CO</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-black py-4 border-bottom border-secondary">
+            <div class="container my-4">
+                <h2 class="text-center text-warning mb-1">Momentos NBA</h2>
+                <p class="text-center text-secondary mb-4">Las noches que cambiaron el baloncesto para siempre</p>
+
+                <div class="accordion accordion-flush" id="accordionNBA">
+
+                    <div class="accordion-item bg-dark text-light border border-secondary mb-2 rounded">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button bg-dark text-warning fw-semibold" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#momento1" aria-expanded="true"
+                                aria-controls="momento1">
+                                1984–1998 — La era de Michael Jordan
+                            </button>
+                        </h2>
+                        <div id="momento1" class="accordion-collapse collapse show" data-bs-parent="#accordionNBA">
+                            <div class="accordion-body text-light">
+                                <div class="row align-items-center g-3">
+                                    <div class="col-md-3">
+                                        <img src="assets/img/jordanpfp.jpg"
+                                            class="img-fluid rounded" alt="Era Jordan">
+                                    </div>
+                                    <div class="col-md-9">
+                                        Michael Jordan transformó la NBA en un fenómeno global. Con los Chicago Bulls
+                                        ganó seis anillos en dos tríos consecutivos (1991–93 y 1996–98), siendo MVP de
+                                        las Finales en todas las ocasiones. Nunca perdió una final.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item bg-dark text-light border border-secondary mb-2 rounded">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-dark text-light fw-semibold" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#momento2" aria-expanded="false"
+                                aria-controls="momento2">
+                                2012 — LeBron James conquista su primer anillo
+                            </button>
+                        </h2>
+                        <div id="momento2" class="accordion-collapse collapse" data-bs-parent="#accordionNBA">
+                            <div class="accordion-body text-light">
+                                <div class="row align-items-center g-3">
+                                    <div class="col-md-3">
+                                        <img src="assets/img/lebronmiami.jpg"
+                                            class="img-fluid rounded" alt="LeBron 2012">
+                                    </div>
+                                    <div class="col-md-9">
+                                        Tras años de críticas, LeBron James ganó su primer campeonato con los Miami Heat
+                                        frente a Oklahoma City Thunder. Fue el punto de inflexión que lo encaminó a ser
+                                        considerado uno de los mejores de todos los tiempos.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item bg-dark text-light border border-secondary mb-2 rounded">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-dark text-light fw-semibold" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#momento3" aria-expanded="false"
+                                aria-controls="momento3">
+                                2016 — La remontada imposible de Cleveland
+                            </button>
+                        </h2>
+                        <div id="momento3" class="accordion-collapse collapse" data-bs-parent="#accordionNBA">
+                            <div class="accordion-body text-light">
+                                <div class="row align-items-center g-3">
+                                    <div class="col-md-3">
+                                        <img src="assets/img//lebroncl.jpg"
+                                            class="img-fluid rounded" alt="Cleveland 2016">
+                                    </div>
+                                    <div class="col-md-9">
+                                        Los Cleveland Cavaliers remontaron un 3-1 en contra frente a los Golden State
+                                        Warriors. La mayor remontada en la historia de las Finales NBA, que le dio a
+                                        Cleveland su primer campeonato histórico.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark py-4 border-bottom border-secondary">
+            <div class="container my-4">
+                <h2 class="text-center text-warning mb-1">Franquicias mas historicas</h2>
+                <p class="text-center text-secondary mb-4">Los equipos que escribieron la historia del baloncesto</p>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                    <div class="col">
+                        <div class="card h-100 bg-black text-light border border-warning">
+                            <img src="assets/img/kobeshaq.jpg"
+                                class="card-img-top" alt="Los Angeles Lakers" style="height:200px;object-fit:cover;">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">Los Angeles Lakers</h5>
+                                <p class="card-text text-secondary">Hogar de leyendas como Magic Johnson, Kareem
+                                    Abdul-Jabbar, Kobe Bryant y LeBron James. La franquicia más glamurosa de la NBA.</p>
+                            </div>
+                            <div class="card-footer bg-black border-top border-secondary">
+                                <span class="badge bg-warning text-black">17 campeonatos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 bg-black text-light border border-warning">
+                            <img src="assets/img/jordanpippen.jpeg"
+                                class="card-img-top" alt="Chicago Bulls" style="height:200px;object-fit:cover;">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">Chicago Bulls</h5>
+                                <p class="card-text text-secondary">La dinastía de los 90 liderada por Michael Jordan.
+                                    Seis títulos en ocho años que los convirtieron en leyenda del deporte mundial.</p>
+                            </div>
+                            <div class="card-footer bg-black border-top border-secondary">
+                                <span class="badge bg-danger">6 campeonatos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 bg-black text-light border border-warning">
+                            <img src="assets/img/curryklaydraymond.jpg"
+                                class="card-img-top" alt="Golden State Warriors" style="height:200px;object-fit:cover;">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">Golden State Warriors</h5>
+                                <p class="card-text text-secondary">La dinastía moderna. Stephen Curry revolucionó el
+                                    baloncesto con el tiro de tres puntos y guió a los Warriors a cuatro títulos entre
+                                    2015 y 2022.</p>
+                            </div>
+                            <div class="card-footer bg-black border-top border-secondary">
+                                <span class="badge bg-primary">7 campeonatos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-black py-4">
+            <div class="container my-4">
+                <h2 class="text-center text-warning mb-1">🏆 Tabla de Campeonatos</h2>
+                <p class="text-center text-secondary mb-4">Equipos con más campeonatos en la historia de la NBA</p>
+                <ul class="list-group">
+                    <li
+                        class="list-group-item bg-dark text-light border border-secondary d-flex justify-content-between align-items-center">
+                        <span><span class="text-warning fw-bold me-2">#1</span>Boston Celtics</span>
+                        <span class="badge bg-warning text-black rounded-pill">18 títulos</span>
+                    </li>
+                    <li
+                        class="list-group-item bg-dark text-light border border-secondary d-flex justify-content-between align-items-center">
+                        <span><span class="text-warning fw-bold me-2">#2</span>Los Angeles Lakers</span>
+                        <span class="badge bg-warning text-black rounded-pill">17 títulos</span>
+                    </li>
+                    <li
+                        class="list-group-item bg-dark text-light border border-secondary d-flex justify-content-between align-items-center">
+                        <span><span class="text-warning fw-bold me-2">#3</span>Golden State Warriors</span>
+                        <span class="badge bg-secondary rounded-pill">7 títulos</span>
+                    </li>
+                    <li
+                        class="list-group-item bg-dark text-light border border-secondary d-flex justify-content-between align-items-center">
+                        <span><span class="text-warning fw-bold me-2">#4</span>Chicago Bulls</span>
+                        <span class="badge bg-secondary rounded-pill">6 títulos</span>
+                    </li>
+                    <li
+                        class="list-group-item bg-dark text-light border border-secondary d-flex justify-content-between align-items-center">
+                        <span><span class="text-warning fw-bold me-2">#5</span>San Antonio Spurs</span>
+                        <span class="badge bg-secondary rounded-pill">5 títulos</span>
+                    </li>
+                    <li
+                        class="list-group-item bg-dark text-light border border-secondary d-flex justify-content-between align-items-center">
+                        <span><span class="text-warning fw-bold me-2">#6</span>Miami Heat</span>
+                        <span class="badge bg-secondary rounded-pill">3 títulos</span>
+                    </li>
+                    <li
+                        class="list-group-item bg-dark text-light border border-secondary d-flex justify-content-between align-items-center">
+                        <span><span class="text-warning fw-bold me-2">#7</span>Dallas Mavericks</span>
+                        <span class="badge bg-secondary rounded-pill">2 títulos</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <footer class="bg-black text-light py-4 mt-5 border-top border-warning border-3">
+        <div class="container">
+            <ul class="nav justify-content-center border-bottom border-secondary pb-3 mb-3 fs-6">
+                <li class="nav-item">
+                    <a href="nba1.html" class="nav-link px-3 text-secondary text-hover-warning"><i class="bi bi-house-door-fill"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="nba1.html" class="nav-link px-3 text-secondary"><i class="bi bi-trophy-fill"></i> Campeonatos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="nba1.html" class="nav-link px-3 text-secondary"><i class="bi bi-person-fill"></i> Jugadores</a>
+                </li>
+                <li class="nav-item">
+                    <a href="app/table.html" class="nav-link px-3 text-warning fw-semibold"><i class="bi bi-table"></i> Ver Tablas</a>
+                </li>
+            </ul>
+            <div class="text-center pt-2">
+                <p class="mb-1 text-light fw-medium">
+                    Desarrollado por: <span class="text-warning">Jacobo Paniagua</span>
+                </p>
+                <p class="text-secondary small mb-0">
+                    &copy; 2026 Taller 3 de Maquetación Web. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

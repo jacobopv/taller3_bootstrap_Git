@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" alt="Favicon" href="assets/img/logo.png" type="image/x-icon">
+    <meta name="author" content="Jacobo Paniagua">
+    <meta name="description" content="Taller 2 de Maquetación web">
+    <meta name="keywords" content="TALLER, taller, Taller">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-traslucent">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-dark text-light">
+
+    <!-- NAV -->
+  <header>
+        <nav class="navbar navbar-expand-sm bg-black navbar-dark border-bottom border-warning border-3 sticky-top">
+            <div class="container-fluid">
+                <img src="../assets/img/nbalogo.png" alt="logo" style="width: 120px; height: 100px;">
+                <a class="navbar-brand fw-bold text-warning fs-4 letter-spacing-3" href="#">NBA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item fs-5 px-2">
+                            <a class="nav-link" href="../nba1.html"><i class="bi bi-house-door-fill"></i> Inicio</a>
+                        </li>
+                        <li class="nav-item fs-5 px-2">
+                            <a class="nav-link" href="#"><i class="bi bi-trophy-fill"></i> Campeonatos</a>
+                        </li>
+                        <li class="nav-item fs-5 px-2">
+                            <a class="nav-link" href="#"><i class="bi bi-person-fill"></i> Jugadores</a>
+                        </li>
+                        <li class="nav-item dropdown fs-5 px-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-calendar"></i> Proyectos
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark border-warning" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item text-warning" href="../app/table.html"><i class="bi bi-table me-2"></i>Tables</a></li>
+                                <li><a class="dropdown-item" href="git.html"><i class="bi bi-github me-2"></i>Git</a></li>
+                                <li><hr class="dropdown-divider bg-secondary"></li>
+                                <li><a class="dropdown-item" href="login.html"><i class="bi bi-box-arrow-in-right override"></i> Sign In / Login</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="btn btn-warning btn-sm fw-bold me-3 text-black"
+                style="--bs-btn-padding-y:.3rem;--bs-btn-padding-x:.9rem;">
+                <i class="bi bi-tv"></i> Ver NBA en vivo
+            </button>
+        </nav>
+    </header>
+
+<i></i>
+<body>
+ <div style="overflow-x: auto;">
+  <table class="table table-bordered">
+  </table>
+</div>
+<div class="container mt-3">
+  <h2>Jugadores Historicos en las franquicias de la NBA</h2>
+  <p>Aqui vemos un listado de los jugadores mas destacados en cada franquicia:</p>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Lakers</th>
+        <th>Bulls</th>
+        <th>Celtics</th>
+        <th>Warriors</th>
+        <th>Spurs</th>
+        <th>Heat</th>
+        <th>Knicks</th>
+        <th>Pistons</th>
+        <th>Jazz</th>
+        <th>Suns</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Kobe Bryant</td>
+        <td>Michael Jordan</td>
+        <td>Larry Bird</td>
+        <td>Stephen Curry</td>
+        <td>Tim Duncan</td>
+        <td>LeBron James</td>
+        <td>Patrick Ewing</td>
+        <td>Isiah Thomas</td>
+        <td>Karl Malone</td>
+        <td>Charles Barkley</td>
+      </tr>
+      <tr>
+        <td>Shaquille O'Neal</td>
+        <td>Scottie Pippen</td>
+        <td>Paul Pierce</td>
+        <td>Klay Thompson</td>
+        <td>David Robinson</td>
+        <td>Dwyane Wade</td>
+        <td>Walt Frazier</td>
+        <td>Joe Dumars</td>
+        <td>John Stockton</td>
+        <td>Kevin Johnson</td>
+      </tr>
+      <tr>
+        <td>Magic Johnson</td>
+        <td>Dennis Rodman</td>
+        <td>Kevin Garnett</td>
+        <td>Draymond Green</td>
+        <td>Tony Parker</td>
+        <td>Alonzo Mourning</td>
+        <td>Bernard King</td>
+        <td>Bill Laimbeer</td>
+        <td>Pete Maravich</td>
+        <td>Dan Majerle</td>
+      </tr>
+      <tr>
+        <td>Jerry West</td>
+        <td>Horace Grant</td>
+        <td>Bob Cousy</td>
+        <td>Chris Mullin</td>
+        <td>Manu Ginobili</td>
+        <td>Chris Bosh</td>
+        <td>Earl Monroe</td>
+        <td>Dennis Rodman</td>
+        <td>Jeff Hornacek</td>
+        <td>Amar'e Stoudemire</td>
+      </tr>
+      <tr>
+        <td>Kareem Abdul-Jabbar</td>
+        <td>Bob Love</td>
+        <td>Bill Russell</td>
+        <td>Wilt Chamberlain</td>
+        <td>George Gervin</td>
+        <td>Glen Rice</td>
+        <td>Dick Barnett</td>
+        <td>Bob Lanier</td>
+        <td>Darrell Griffith</td>
+        <td>Walter Davis</td>
+      </tr>
+      <tr>
+        <td>James Worthy</td>
+        <td>Jerry Sloan</td>
+        <td>Jo Jo White</td>
+        <td>Mitch Richmond</td>
+        <td>Sean Elliott</td>
+        <td>Tim Hardaway</td>
+        <td>Dave DeBusschere</td>
+        <td>Dave Bing</td>
+        <td>Mark Eaton</td>
+        <td>Tom Chambers</td>
+      </tr>
+      <tr>
+        <td>Elgin Baylor</td>
+        <td>Chet Walker</td>
+        <td>Dave Cowens</td>
+        <td>Nate Thurmond</td>
+        <td>Avery Johnson</td>
+        <td>Shaquille O'Neal</td>
+        <td>Bill Bradley</td>
+        <td>Spencer Haywood</td>
+        <td>Blue Edwards</td>
+        <td>Cedric Ceballos</td>
+      </tr>
+      <tr>
+        <td>Byron Scott</td>
+        <td>Tom Boerwinkle</td>
+        <td>Cedric Maxwell</td>
+        <td>Al Attles</td>
+        <td>Terry Cummings</td>
+        <td>Steve Smith</td>
+        <td>Willis Reed</td>
+        <td>Terry Mills</td>
+        <td>Thurl Bailey</td>
+        <td>Larry Nance</td>
+      </tr>
+      <tr>
+        <td>Michael Cooper</td>
+        <td>Norm Van Lier</td>
+        <td>Robert Parish</td>
+        <td>Rick Barry</td>
+        <td>Willie Anderson</td>
+        <td>Rony Seikaly</td>
+        <td>Richie Guerin</td>
+        <td>John Salley</td>
+        <td>Adrian Dantley</td>
+        <td>Connie Hawkins</td>
+      </tr>
+      <tr>
+        <td>AC Green</td>
+        <td>Mickey Johnson</td>
+        <td>Danny Ainge</td>
+        <td>Guy Rodgers</td>
+        <td>Vinnie Del Negro</td>
+        <td>Sherman Douglas</td>
+        <td>Harry Gallatin</td>
+        <td>Vinnie Johnson</td>
+        <td>Rickey Green</td>
+        <td>Andrew Johnson</td>
+      </tr>
+      <tr>
+        <td>Nick Van Exel</td>
+        <td>Luol Deng</td>
+        <td>Tiny Archibald</td>
+        <td>Jamaal Wilkes</td>
+        <td>Larry Kenon</td>
+        <td>Willie Burton</td>
+        <td>Dick McGuire</td>
+        <td>Kelly Tripucka</td>
+        <td>Devin Durrant</td>
+        <td>Alvan Adams</td>
+      </tr>
+      <tr>
+        <td>Derek Fisher</td>
+        <td>Toni Kukoc</td>
+        <td>Kevin McHale</td>
+        <td>Purvis Short</td>
+        <td>Mike Mitchell</td>
+        <td>Kevin Edwards</td>
+        <td>Carl Braun</td>
+        <td>Bill Cartwright</td>
+        <td>Bob Boozer</td>
+        <td>Paul Westphal</td>
+      </tr>
+      <tr>
+        <td>Vlade Divac</td>
+        <td>Bill Wennington</td>
+        <td>Dennis Johnson</td>
+        <td>Sleepy Floyd</td>
+        <td>Johnny Moore</td>
+        <td>Rex Chapman</td>
+        <td>Dick Garmaker</td>
+        <td>James Edwards</td>
+        <td>Ben Poquette</td>
+        <td>Neal Walk</td>
+      </tr>
+      <tr>
+        <td>Eddie Jones</td>
+        <td>John Paxson</td>
+        <td>Tom Sanders</td>
+        <td>Tom Meschery</td>
+        <td>Alvin Robertson</td>
+        <td>Grant Long</td>
+        <td>Cazzie Russell</td>
+        <td>Kevin Willis</td>
+        <td>Ron Boone</td>
+        <td>Dick Van Arsdale</td>
+      </tr>
+      <tr>
+        <td>Cedric Ceballos</td>
+        <td>Steve Kerr</td>
+        <td>Bailey Howell</td>
+        <td>Jeff Mullins</td>
+        <td>Antoine Carr</td>
+        <td>Bimbo Coles</td>
+        <td>Phil Jackson</td>
+        <td>Bob McAdoo</td>
+        <td>Rich Kelley</td>
+        <td>Mel Counts</td>
+      </tr>
+      <tr>
+        <td>Kurt Rambis</td>
+        <td>Will Perdue</td>
+        <td>Frank Ramsey</td>
+        <td>Wally Jones</td>
+        <td>Dwayne Schintzius</td>
+        <td>Ricky Pierce</td>
+        <td>Butch Beard</td>
+        <td>Chuck Daly</td>
+        <td>Bobby Cattage</td>
+        <td>Charlie Scott</td>
+      </tr>
+      <tr>
+        <td>Mychal Thompson</td>
+        <td>Craig Hodges</td>
+        <td>Jim Loscutoff</td>
+        <td>Jim King</td>
+        <td>Checkers Robinson</td>
+        <td>Glen Rice</td>
+        <td>Harthorne Wingo</td>
+        <td>Ron Lee</td>
+        <td>Billy Paultz</td>
+        <td>Gail Goodrich</td>
+      </tr>
+      <tr>
+        <td>Lon Rosen</td>
+        <td>B.J. Armstrong</td>
+        <td>Don Chaney</td>
+        <td>Al Netter</td>
+        <td>Coby Dietrick</td>
+        <td>Kevin Loughery</td>
+        <td>Trent Tucker</td>
+        <td>Earl Cureton</td>
+        <td>Harvey Catchings</td>
+        <td>Dennis Awtrey</td>
+      </tr>
+      <tr>
+        <td>Travis Knight</td>
+        <td>Stacey King</td>
+        <td>Satch Sanders</td>
+        <td>Lester Lane</td>
+        <td>Paul Griffin</td>
+        <td>Bob Boozer</td>
+        <td>Len Chappell</td>
+        <td>Kurt Thomas</td>
+        <td>Tom Kozelko</td>
+        <td>Joe Caldwell</td>
+      </tr>
+      <tr>
+        <td>Larry Spriggs</td>
+        <td>Scott Williams</td>
+        <td>Ernie DiGregorio</td>
+        <td>Coby Caldwell</td>
+        <td>Reggie Williams</td>
+        <td>Jon McGlocklin</td>
+        <td>Nate Bowman</td>
+        <td>Ralph Drollinger</td>
+        <td>Luther Burden</td>
+        <td>Lamar Green</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+    <footer class="bg-black text-light py-4 mt-5 border-top border-warning border-3">
+        <div class="container">
+            <ul class="nav justify-content-center border-bottom border-secondary pb-3 mb-3 fs-6">
+                <li class="nav-item">
+                    <a href="nba1.html" class="nav-link px-3 text-secondary text-hover-warning"><i class="bi bi-house-door-fill"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="nba1.html" class="nav-link px-3 text-secondary"><i class="bi bi-trophy-fill"></i> Campeonatos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="nba1.html" class="nav-link px-3 text-secondary"><i class="bi bi-person-fill"></i> Jugadores</a>
+                </li>
+                <li class="nav-item">
+                    <a href="app/table.html" class="nav-link px-3 text-warning fw-semibold"><i class="bi bi-table"></i> Ver Tablas</a>
+                </li>
+            </ul>
+            <div class="text-center pt-2">
+                <p class="mb-1 text-light fw-medium">
+                    Desarrollado por: <span class="text-warning">Jacobo Paniagua</span>
+                </p>
+                <p class="text-secondary small mb-0">
+                    &copy; 2026 Taller 3 de Maquetación Web. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
